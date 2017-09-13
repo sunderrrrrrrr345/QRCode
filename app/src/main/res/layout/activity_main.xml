@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sunder.com.a360degreeinfodynamics.qrcode.MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Enter Text Here"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:text="CLICK HERE TO generate qr code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintLeft_toLeftOf="@+id/editText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+</android.support.constraint.ConstraintLayout>
